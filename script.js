@@ -102,7 +102,9 @@ function findindex()
 
 function sorted()
 {
-    arr.sort();
+    arr.sort((a, b) => { 
+        return a > b;
+    });
     generate();
 }
 
